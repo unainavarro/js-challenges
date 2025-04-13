@@ -100,7 +100,6 @@
 
 .btn-start {
   background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
   color: white;
 }
 
@@ -113,16 +112,5 @@
 }
 
 .btn-start:hover {
-  background-color: #3a5bff;
-}
-
-/* Dark mode styles */
-[data-theme="dark"] .btn-demo {
-  background-color: #333;
-  border-color: #444;
-  color: #f0f0f0;
-}
-
-[data-theme="dark"] .btn-demo:hover {
-  background-color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,28 @@
+{
+    "challenges": [
+        {
+            "id": "reloj-manecillas",
+            "title": "Reloj de manecillas",
+            "requirements": [
+                "HTML: Texto de prueba..",
+                "CSS: Texto de prueba.",
+                "JavaScript: Texto de prueba.",
+                "Accesibilidad: Texto de prueba."
+            ],
+            "demoUrl": "#",
+            "githubUrl": "#"
+        },
+        {
+            "id": "reloj-digital",
+            "title": "Reloj digital",
+            "requirements": [
+                "HTML: Texto de prueba..",
+                "CSS: Texto de prueba.",
+                "JavaScript: Texto de prueba.",
+                "Accesibilidad: Texto de prueba."
+            ],
+            "demoUrl": "#",
+            "githubUrl": "#"
+        }
+    ]
+}
