@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS challenges</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <h1>
+            <img
+              src="img/javascript.svg"
+              alt="js logo"
+              style="border-radius: 4px"
+            />
+            <span style="color: #f7df1e">Challenges</span>
+          </h1>
+          <p>
+            Retos para practicar JavaScript sin enfatizar mucho en el estilo
+            CSS. Los retos tienen un estilo minimalista para practicar js en
+            profundidad.
+          </p>
+        </div>
+        <div class="theme-switcher">
+          <button class="theme-btn light" title="Light mode">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="theme-btn dark" title="Dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="progress-summary">
+          <h2>Progress <span id="progress-count">0/30</span></h2>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </section>
+
+        <section class="challenges-list">
+          <div class="challenge-card" data-challenge-id="reloj-manecillas">
+            <div class="challenge-header">
+              <h3>Reloj de manecillas</h3>
+              <span class="challenge-source">(Fácil)</span>
+            </div>
+            <p>
+              Con este proyecto aprenderás a manejar el DOM y usar funciones
+              incorporadas como setInterval y Date.
+            </p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="challenge-card" data-challenge-id="reloj-digital">
+            <div class="challenge-header">
+              <h3>Reloj digital</h3>
+              <span class="challenge-source">(Fácil)</span>
+            </div>
+            <p>
+              Con este proyecto aprenderás a manejar el DOM y usar funciones
+              incorporadas como setInterval y Date.
+            </p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Not started">○</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+          <button class="modal-close">&times;</button>
+          <h2 class="modal-title" id="modal-title">Challenge Title</h2>
+          <div class="modal-content">
+            <h3>Key requirements for this project:</h3>
+            <ul class="requirements-list" id="requirements-list">
+              <!-- Se llenará dinámicamente -->
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="footer-left">
+              <button class="btn-demo" id="demo-btn">Demo</button>
+              <button class="btn-github" id="github-btn">GitHub</button>
+            </div>
+            <button class="btn-start">Empezar reto</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          @unainavarro
+          <span class="icon" title="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></span>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
