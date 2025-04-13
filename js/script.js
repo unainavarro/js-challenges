@@ -1,4 +1,23 @@
 // ===========================
+// Variables globales
+// ===========================
+let challengesData = [];
+let currentChallenge = null;
+const STORAGE_KEY = "completedChallenges";
+
+// ===========================
+// Funciones para LocalStorage
+// ===========================
+function guardarProgreso(idsCompletados) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(idsCompletados));
+}
+
+function obtenerProgresoGuardado() {
+  const guardado = localStorage.getItem(STORAGE_KEY);
+  return guardado ? JSON.parse(guardado) : [];
+}
+
+// ===========================
 // Inicialización al cargar DOM
 // ===========================
 document.addEventListener("DOMContentLoaded", async function () {
@@ -14,7 +33,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   aplicarTema(currentTheme);
 
-  // Evento al cambiar el tema manualmente
   themeBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
       const theme = this.classList.contains("light")
@@ -26,7 +44,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   });
 
-  // Cambios en la preferencia del sistema
   prefersDarkScheme.addEventListener("change", (e) => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "system" || !savedTheme) {
@@ -63,11 +80,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   // ===========================
   const progressCount = document.getElementById("progress-count");
   const progressFill = document.querySelector(".progress-fill");
-
-  const completedChallenges = 0; // Aquí se puede enlazar con datos reales
   const totalChallenges = 30;
-
-  actualizarProgreso(completedChallenges);
 
   function actualizarProgreso(completados) {
     progressCount.textContent = `${completados}/${totalChallenges}`;
@@ -78,8 +91,22 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Sección: Tarjetas de desafíos
   // ===========================
   const challengeCards = document.querySelectorAll(".challenge-card");
+  const progresoGuardado = obtenerProgresoGuardado();
 
   challengeCards.forEach((card) => {
+    const challengeId = card.getAttribute("data-challenge-id");
+    const statusIcon = card.querySelector(".status-icons span");
+
+    // Marcar como completados desde el localStorage
+    if (progresoGuardado.includes(challengeId)) {
+      card.classList.add("completed");
+      statusIcon.classList.remove("incomplete-icon");
+      statusIcon.classList.add("completed-icon");
+      statusIcon.textContent = "✓";
+      statusIcon.setAttribute("title", "Completado");
+    }
+
+    // Toggle de estado al hacer clic
     card.addEventListener("click", function (e) {
       if (
         e.target.tagName === "BUTTON" ||
@@ -88,36 +115,35 @@ document.addEventListener("DOMContentLoaded", async function () {
         return;
       }
 
-      const isCompleted = this.classList.contains("completed");
-      const statusIcon = this.querySelector(".status-icons span");
+      const isCompleted = card.classList.contains("completed");
 
       if (isCompleted) {
-        this.classList.remove("completed");
+        card.classList.remove("completed");
         statusIcon.classList.remove("completed-icon");
         statusIcon.classList.add("incomplete-icon");
         statusIcon.textContent = "○";
         statusIcon.setAttribute("title", "No iniciado");
       } else {
-        this.classList.add("completed");
+        card.classList.add("completed");
         statusIcon.classList.remove("incomplete-icon");
         statusIcon.classList.add("completed-icon");
         statusIcon.textContent = "✓";
         statusIcon.setAttribute("title", "Completado");
       }
 
-      const nuevosCompletados = document.querySelectorAll(
-        ".challenge-card.completed"
-      ).length;
-      actualizarProgreso(nuevosCompletados);
+      // Actualizar progreso y guardar en localStorage
+      const nuevasCompletadas = Array.from(
+        document.querySelectorAll(".challenge-card.completed")
+      ).map((card) => card.getAttribute("data-challenge-id"));
+
+      guardarProgreso(nuevasCompletadas);
+      actualizarProgreso(nuevasCompletadas.length);
     });
   });
-});
 
-// ===========================
-// Variables globales
-// ===========================
-let challengesData = [];
-let currentChallenge = null;
+  // Mostrar progreso al cargar
+  actualizarProgreso(progresoGuardado.length);
+});
 
 // ===========================
 // Cargar datos de desafíos desde JSON
@@ -133,7 +159,6 @@ async function loadChallengesData() {
   } catch (error) {
     console.error("Error al cargar el JSON:", error);
 
-    // Datos por defecto si falla la carga
     challengesData = [
       {
         id: "default",
