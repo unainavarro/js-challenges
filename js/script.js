@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   // ===========================
   const progressCount = document.getElementById("progress-count");
   const progressFill = document.querySelector(".progress-fill");
-  const totalChallenges = 30;
+  const totalChallenges = 10;
 
   function actualizarProgreso(completados) {
     progressCount.textContent = `${completados}/${totalChallenges}`;

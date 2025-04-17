@@ -1,58 +1,69 @@
 {
     "challenges": [
         {
-            "id": "detectar-teclas",
-            "title": "Detectar teclas",
+            "id": "hucha",
+            "title": "Hucha",
             "requirements": [
-                "HTML: Crea un div que muestre la tecla pulsada.",
-                "CSS: Libre.",
-                "JavaScript: No utilices KeyCode."
+                "HTML: Crea monedas arrastrables y una hucha como área de destino.",
+                "CSS: Añade estilos para el efecto de arrastrar y soltar (drag-over).",
+                "JavaScript: Usa eventos dragstart, dragover y drop sin librerías externas."
             ],
-            "demoUrl": "#",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
             "githubUrl": "#"
         },
         {
-            "id": "detectar-raton",
-            "title": "Coordenadas del ratón",
+            "id": "idioma",
+            "title": "Idioma",
             "requirements": [
-                "HTML: Crea un div que muestre la coordenadas del ratón.",
-                "CSS: Libre.",
-                "JavaScript: Las coordenadas se tienen que actualizar mientras se mueve el ratón."
+                "HTML: Usa botones con atributo data-language y elementos con data-section y data-value.",
+                "CSS: Libre",
+                "JavaScript: Usa fetch para cargar archivos JSON y actualizar el contenido dinámicamente."
             ],
-            "demoUrl": "#",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
             "githubUrl": "#"
         },
         {
-            "id": "selector-colores",
-            "title": "Selector de colores",
+            "id": "audio-texto",
+            "title": "Audio texto",
             "requirements": [
-                "HTML: Crea un input de tipo color.",
-                "CSS: Libre.",
-                "JavaScript: Actualiza el fondo en función del color seleccionado."
+                "HTML: Crea un botón, un textarea y un select para elegir la voz.",
+                "CSS: Libre",
+                "JavaScript: Usa la API de SpeechSynthesis para leer texto en voz alta."
             ],
-            "demoUrl": "#",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
             "githubUrl": "#"
         },
         {
-            "id": "colores-aleatorios",
-            "title": "Muestra de colores aleatorios",
+            "id": "cuenta",
+            "title": "Cuenta caracteres y palabras",
             "requirements": [
-                "HTML: Crea un botón para actualizar los botones y un contenedor para mostrarlos.",
-                "CSS: Libre.",
-                "JavaScript: Muestra una paleta de colores aleatorios en el contenedor del HTML."
+                "HTML: Crea un textarea y elementos para mostrar la cantidad de caracteres y palabras.",
+                "CSS: Libre",
+                "JavaScript: Cuenta caracteres y palabras en tiempo real al escribir en el textarea."
             ],
-            "demoUrl": "#",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
             "githubUrl": "#"
         },
         {
-            "id": "contador",
-            "title": "Contador",
+            "id": "preguntas",
+            "title": "Preguntas",
             "requirements": [
-                "HTML: Un botón para resetear, uno para sumar y otro para restar.",
-                "CSS: Libre.",
-                "JavaScript: Al pulsar un btn sumar o restar 1 al contador. Si haces click en reset se restablece el contador a 0."
+                "HTML: Crea un contenedor para preguntas, botones de respuesta y un botón de siguiente.",
+                "CSS: Añade estilos para respuestas correctas e incorrectas.",
+                "JavaScript: Maneja un cuestionario dinámico mostrando preguntas y calculando el puntaje."
             ],
-            "demoUrl": "#",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
+            "githubUrl": "#"
+        },
+        {
+            "id": "6",
+            "title": "6",
+            "requirements": [
+                "HTML: ",
+                "CSS: ",
+                "JavaScript: ."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
             "githubUrl": "#"
         }
     ]
