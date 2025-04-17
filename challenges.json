@@ -1,25 +1,56 @@
 {
     "challenges": [
         {
-            "id": "reloj-manecillas",
-            "title": "Reloj de manecillas",
+            "id": "detectar-teclas",
+            "title": "Detectar teclas",
             "requirements": [
-                "HTML: Texto de prueba..",
-                "CSS: Texto de prueba.",
-                "JavaScript: Texto de prueba.",
-                "Accesibilidad: Texto de prueba."
+                "HTML: Crea un div que muestre la tecla pulsada.",
+                "CSS: Libre.",
+                "JavaScript: No utilices KeyCode."
             ],
             "demoUrl": "#",
             "githubUrl": "#"
         },
         {
-            "id": "reloj-digital",
-            "title": "Reloj digital",
+            "id": "detectar-raton",
+            "title": "Coordenadas del ratón",
             "requirements": [
-                "HTML: Texto de prueba..",
-                "CSS: Texto de prueba.",
-                "JavaScript: Texto de prueba.",
-                "Accesibilidad: Texto de prueba."
+                "HTML: Crea un div que muestre la coordenadas del ratón.",
+                "CSS: Libre.",
+                "JavaScript: Las coordenadas se tienen que actualizar mientras se mueve el ratón."
+            ],
+            "demoUrl": "#",
+            "githubUrl": "#"
+        },
+        {
+            "id": "selector-colores",
+            "title": "Selector de colores",
+            "requirements": [
+                "HTML: Crea un input de tipo color.",
+                "CSS: Libre.",
+                "JavaScript: Actualiza el fondo en función del color seleccionado."
+            ],
+            "demoUrl": "#",
+            "githubUrl": "#"
+        },
+        {
+            "id": "colores-aleatorios",
+            "title": "Muestra de colores aleatorios",
+            "requirements": [
+                "HTML: Crea un botón para actualizar los botones y un contenedor para mostrarlos.",
+                "CSS: Libre.",
+                "JavaScript: Muestra una paleta de colores aleatorios en el contenedor del HTML."
+            ],
+            "demoUrl": "#",
+            "githubUrl": "#"
+        },
+        {
+            "id": "contador",
+            "title": "Contador",
+            "requirements": [
+                "HTML: Un botón para resetear, uno para sumar y otro para restar.",
+                "CSS: Libre.",
+                "JavaScript: Al pulsar un btn sumar o restar 1 al contador. Si haces click en reset se restablece el contador a 0."
             ],
             "demoUrl": "#",
             "githubUrl": "#"
