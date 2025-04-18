@@ -112,6 +112,6 @@
 }
 
 .btn-start:hover {
-  background-color: var(--primary-color);
-  color: black;
+  background-color: var(--bg-btn-start);
+  color: var(--text-btn-start);
 }

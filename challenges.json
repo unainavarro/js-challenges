@@ -8,7 +8,7 @@
                 "CSS: Añade estilos para el efecto de arrastrar y soltar (drag-over).",
                 "JavaScript: Usa eventos dragstart, dragover y drop sin librerías externas."
             ],
-            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/hucha/",
             "githubUrl": "#"
         },
         {
@@ -19,7 +19,7 @@
                 "CSS: Libre",
                 "JavaScript: Usa fetch para cargar archivos JSON y actualizar el contenido dinámicamente."
             ],
-            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/idioma/",
             "githubUrl": "#"
         },
         {
@@ -30,7 +30,7 @@
                 "CSS: Libre",
                 "JavaScript: Usa la API de SpeechSynthesis para leer texto en voz alta."
             ],
-            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/texto-audio/",
             "githubUrl": "#"
         },
         {
@@ -41,7 +41,7 @@
                 "CSS: Libre",
                 "JavaScript: Cuenta caracteres y palabras en tiempo real al escribir en el textarea."
             ],
-            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/cuenta-palabras/",
             "githubUrl": "#"
         },
         {
@@ -52,16 +52,60 @@
                 "CSS: Añade estilos para respuestas correctas e incorrectas.",
                 "JavaScript: Maneja un cuestionario dinámico mostrando preguntas y calculando el puntaje."
             ],
-            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/preguntas/",
             "githubUrl": "#"
         },
         {
-            "id": "6",
-            "title": "6",
+            "id": "qr",
+            "title": "Generador de QR",
             "requirements": [
-                "HTML: ",
-                "CSS: ",
-                "JavaScript: ."
+                "HTML: Crea un input de texto, un botón y un contenedor de imagen para mostrar el QR",
+                "CSS: Añade clases para mostrar/ocultar imagen y marcar errores en el input.",
+                "JavaScript: Genera un código QR usando una API externa al ingresar texto."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/generador-qr/",
+            "githubUrl": "#"
+        },
+        {
+            "id": "notas",
+            "title": "Notas",
+            "requirements": [
+                "HTML: Crea un contenedor de notas y un botón para crear nuevas notas.",
+                "CSS: Aplica estilos para las notas y el botón de eliminar.",
+                "JavaScript: Usa localStorage para guardar, crear y eliminar notas dinámicamente."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/notas/",
+            "githubUrl": "#"
+        },
+        {
+            "id": "clima",
+            "title": "Clima",
+            "requirements": [
+                "HTML: Crea un input, un botón de búsqueda y contenedores para mostrar el clima.",
+                "CSS: Estiliza la sección de clima y los estados de error.",
+                "JavaScript: Usa fetch para consultar la API de OpenWeather y mostrar datos meteorológicos."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/clima/",
+            "githubUrl": "#"
+        },
+        {
+            "id": "buscador-img",
+            "title": "Buscador de imágenes",
+            "requirements": [
+                "HTML: Crea un formulario de búsqueda, un contenedor de resultados y un botón para cargar más imágenes.",
+                "CSS: Estiliza el grid de imágenes y el botón de 'ver más'.",
+                "JavaScript: Usa fetch para consultar la API de Unsplash y mostrar imágenes dinámicamente."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/buscador-img/",
+            "githubUrl": "#"
+        },
+        {
+            "id": "galeria",
+            "title": "Galería",
+            "requirements": [
+                "HTML: Crea miniaturas (thumbnails) con atributos personalizados y un contenedor de lightbox.",
+                "CSS: Estiliza el lightbox y las transiciones de imágenes.",
+                "JavaScript: Usa fetch para obtener datos de imágenes y maneja transiciones al abrir y cerrar lightbox."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
             "githubUrl": "#"
