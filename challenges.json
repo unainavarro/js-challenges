@@ -9,7 +9,7 @@
                 "JavaScript: Usa eventos dragstart, dragover y drop sin librerías externas."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/hucha/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/hucha"
         },
         {
             "id": "idioma",
@@ -20,7 +20,7 @@
                 "JavaScript: Usa fetch para cargar archivos JSON y actualizar el contenido dinámicamente."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/idioma/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/idioma"
         },
         {
             "id": "audio-texto",
@@ -31,7 +31,7 @@
                 "JavaScript: Usa la API de SpeechSynthesis para leer texto en voz alta."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/texto-audio/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/texto-audio"
         },
         {
             "id": "cuenta",
@@ -42,7 +42,7 @@
                 "JavaScript: Cuenta caracteres y palabras en tiempo real al escribir en el textarea."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/cuenta-palabras/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/cuenta-palabras"
         },
         {
             "id": "preguntas",
@@ -53,7 +53,7 @@
                 "JavaScript: Maneja un cuestionario dinámico mostrando preguntas y calculando el puntaje."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/preguntas/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/preguntas"
         },
         {
             "id": "qr",
@@ -64,7 +64,7 @@
                 "JavaScript: Genera un código QR usando una API externa al ingresar texto."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/generador-qr/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/generador-qr"
         },
         {
             "id": "notas",
@@ -75,7 +75,7 @@
                 "JavaScript: Usa localStorage para guardar, crear y eliminar notas dinámicamente."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/notas/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/notas"
         },
         {
             "id": "clima",
@@ -86,7 +86,7 @@
                 "JavaScript: Usa fetch para consultar la API de OpenWeather y mostrar datos meteorológicos."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/clima/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/clima"
         },
         {
             "id": "buscador-img",
@@ -97,7 +97,7 @@
                 "JavaScript: Usa fetch para consultar la API de Unsplash y mostrar imágenes dinámicamente."
             ],
             "demoUrl": "https://js-challenges-u.netlify.app/challenges/buscador-img/",
-            "githubUrl": "#"
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/buscador-img"
         },
         {
             "id": "galeria",
@@ -107,8 +107,8 @@
                 "CSS: Estiliza el lightbox y las transiciones de imágenes.",
                 "JavaScript: Usa fetch para obtener datos de imágenes y maneja transiciones al abrir y cerrar lightbox."
             ],
-            "demoUrl": "https://js-challenges-u.netlify.app/challenges/01-detector-de-teclas/",
-            "githubUrl": "#"
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/galeria/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/galeria"
         }
     ]
 }
