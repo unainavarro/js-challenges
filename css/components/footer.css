@@ -1,0 +1,19 @@
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.github:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+}

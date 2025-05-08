@@ -1,0 +1,114 @@
+{
+    "challenges": [
+        {
+            "id": "hucha",
+            "title": "Hucha",
+            "requirements": [
+                "HTML: Crea monedas arrastrables y una hucha como área de destino.",
+                "CSS: Añade estilos para el efecto de arrastrar y soltar (drag-over).",
+                "JavaScript: Usa eventos dragstart, dragover y drop sin librerías externas."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/hucha/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/hucha"
+        },
+        {
+            "id": "idioma",
+            "title": "Idioma",
+            "requirements": [
+                "HTML: Usa botones con atributo data-language y elementos con data-section y data-value.",
+                "CSS: Libre",
+                "JavaScript: Usa fetch para cargar archivos JSON y actualizar el contenido dinámicamente."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/idioma/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/idioma"
+        },
+        {
+            "id": "audio-texto",
+            "title": "Audio texto",
+            "requirements": [
+                "HTML: Crea un botón, un textarea y un select para elegir la voz.",
+                "CSS: Libre",
+                "JavaScript: Usa la API de SpeechSynthesis para leer texto en voz alta."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/texto-audio/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/texto-audio"
+        },
+        {
+            "id": "cuenta",
+            "title": "Cuenta caracteres y palabras",
+            "requirements": [
+                "HTML: Crea un textarea y elementos para mostrar la cantidad de caracteres y palabras.",
+                "CSS: Libre",
+                "JavaScript: Cuenta caracteres y palabras en tiempo real al escribir en el textarea."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/cuenta-palabras/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/cuenta-palabras"
+        },
+        {
+            "id": "preguntas",
+            "title": "Preguntas",
+            "requirements": [
+                "HTML: Crea un contenedor para preguntas, botones de respuesta y un botón de siguiente.",
+                "CSS: Añade estilos para respuestas correctas e incorrectas.",
+                "JavaScript: Maneja un cuestionario dinámico mostrando preguntas y calculando el puntaje."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/preguntas/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/preguntas"
+        },
+        {
+            "id": "qr",
+            "title": "Generador de QR",
+            "requirements": [
+                "HTML: Crea un input de texto, un botón y un contenedor de imagen para mostrar el QR",
+                "CSS: Añade clases para mostrar/ocultar imagen y marcar errores en el input.",
+                "JavaScript: Genera un código QR usando una API externa al ingresar texto."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/generador-qr/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/generador-qr"
+        },
+        {
+            "id": "notas",
+            "title": "Notas",
+            "requirements": [
+                "HTML: Crea un contenedor de notas y un botón para crear nuevas notas.",
+                "CSS: Aplica estilos para las notas y el botón de eliminar.",
+                "JavaScript: Usa localStorage para guardar, crear y eliminar notas dinámicamente."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/notas/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/notas"
+        },
+        {
+            "id": "clima",
+            "title": "Clima",
+            "requirements": [
+                "HTML: Crea un input, un botón de búsqueda y contenedores para mostrar el clima.",
+                "CSS: Estiliza la sección de clima y los estados de error.",
+                "JavaScript: Usa fetch para consultar la API de OpenWeather y mostrar datos meteorológicos."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/clima/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/clima"
+        },
+        {
+            "id": "buscador-img",
+            "title": "Buscador de imágenes",
+            "requirements": [
+                "HTML: Crea un formulario de búsqueda, un contenedor de resultados y un botón para cargar más imágenes.",
+                "CSS: Estiliza el grid de imágenes y el botón de 'ver más'.",
+                "JavaScript: Usa fetch para consultar la API de Unsplash y mostrar imágenes dinámicamente."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/buscador-img/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/buscador-img"
+        },
+        {
+            "id": "galeria",
+            "title": "Galería",
+            "requirements": [
+                "HTML: Crea miniaturas (thumbnails) con atributos personalizados y un contenedor de lightbox.",
+                "CSS: Estiliza el lightbox y las transiciones de imágenes.",
+                "JavaScript: Usa fetch para obtener datos de imágenes y maneja transiciones al abrir y cerrar lightbox."
+            ],
+            "demoUrl": "https://js-challenges-u.netlify.app/challenges/galeria/",
+            "githubUrl": "https://github.com/unainavarro/js-challenges/tree/main/challenges/galeria"
+        }
+    ]
+}

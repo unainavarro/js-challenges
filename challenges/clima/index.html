@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Introduce una ciudad"
+          spellcheck="false"
+        />
+        <button>🔍</button>
+      </div>
+
+      <div class="error">
+        <p>Ciudad no encontrada</p>
+      </div>
+
+      <div class="weather">
+        <p class="weather-icon">🌧️</p>
+        <h1 class="temp">22ºc</h1>
+        <h2 class="city">Bilbao</h2>
+        <div class="details">
+          <div class="col">
+            <p class="humidity-icon">💧</p>
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humedad</p>
+            </div>
+          </div>
+          <div class="col">
+            <p class="wind-icon">🍃</p>
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Viento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

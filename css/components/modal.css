@@ -1,0 +1,117 @@
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 30px;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--icon-color);
+  padding: 5px;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.requirements-list {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.requirements-list li {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-left {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-demo,
+.btn-github,
+.btn-start {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.btn-demo {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.btn-github {
+  background-color: #333;
+  border: 1px solid #333;
+  color: white;
+}
+
+.btn-start {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.btn-demo:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-github:hover {
+  background-color: #222;
+}
+
+.btn-start:hover {
+  background-color: var(--bg-btn-start);
+  color: var(--text-btn-start);
+}

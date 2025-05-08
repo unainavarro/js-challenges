@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hucha</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="monedas">
+      <div class="moneda" draggable="true" data-valor="1.00">
+        <div class="cara-trasera">1.00€</div>
+      </div>
+      <div class="moneda" draggable="true" data-valor="0.50">
+        <div class="cara-trasera">0.50€</div>
+      </div>
+    </div>
+
+    <div
+      class="hucha"
+      id="hucha"
+      ondrop="soltarMoneda(event)"
+      ondragover="permitirSoltar(event)"
+    >
+      <img src="img/pig.svg" alt="hucha de cerdo" class="hucha" />
+      <p>Dinero: <span class="total">0</span>€</p>
+    </div>
+  </body>
+</html>

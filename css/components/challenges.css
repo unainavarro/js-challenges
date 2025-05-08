@@ -1,0 +1,87 @@
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.challenge-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.challenge-card.completed {
+  border-left: 4px solid var(--primary-color);
+}
+
+.challenge-header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .challenge-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.challenge-header h3 {
+  font-size: 1.2rem;
+}
+
+.challenge-source {
+  font-size: 0.9rem;
+  color: var(--icon-color);
+}
+
+@media (max-width: 480px) {
+  .challenge-source {
+    font-size: 0.8rem;
+  }
+}
+
+.challenge-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.statement-btn {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.statement-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--statement-color);
+}
+
+.status-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.status-icons:hover {
+  cursor: pointer;
+}
+
+.completed-icon {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.incomplete-icon {
+  color: var(--icon-color);
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/x-icon" />
+    <title>JS challenges</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <h1>
+            <img src="img/javascript.svg" alt="js logo" class="logo" />
+            <span>Challenges</span>
+          </h1>
+          <p>
+            Retos para practicar JavaScript. A través de ejercicios prácticos
+            como juegos de preguntas, generadores de QR, contadores de
+            caracteres, buscadores de imágenes, apps de notas, traductores
+            dinámicos y más, pondrás en práctica el manejo del DOM, eventos,
+            almacenamiento local, consumo de APIs, efectos visuales y técnicas
+            modernas de interacción.
+          </p>
+        </div>
+        <div class="theme-switcher">
+          <button class="theme-btn light" title="Light mode">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="theme-btn dark" title="Dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="progress-summary">
+          <h2>Progreso <span id="progress-count"></span></h2>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </section>
+
+        <section class="challenges-list">
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="hucha">
+            <div class="challenge-header">
+              <h3>Hucha</h3>
+              <span class="challenge-source">(Fácil)</span>
+            </div>
+            <p>Arrastra monedas a una hucha y suma su valor al total.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="cuenta">
+            <div class="challenge-header">
+              <h3>Cuenta caracteres y palabras</h3>
+              <span class="challenge-source">(Fácil)</span>
+            </div>
+            <p>Cuenta caracteres y palabras mientras escribes.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="idioma">
+            <div class="challenge-header">
+              <h3>Idioma</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>
+              Cambia el idioma del sitio cargando datos desde archivos JSON.
+            </p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="audio-texto">
+            <div class="challenge-header">
+              <h3>Texto a audio</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>Convierte texto escrito en voz usando distintas voces.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="preguntas">
+            <div class="challenge-header">
+              <h3>Preguntas</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>Crea un quiz de preguntas y muestra la puntuación final.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="qr">
+            <div class="challenge-header">
+              <h3>Generador QR</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>Genera un código QR a partir de texto(URL) ingresado.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="notas">
+            <div class="challenge-header">
+              <h3>Notas</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>Crea, edita y guarda notas usando localStorage.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="clima">
+            <div class="challenge-header">
+              <h3>Clima</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>Consulta el clima actual de una ciudad usando una API.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="buscador-img">
+            <div class="challenge-header">
+              <h3>Buscador de imágenes</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>Busca y muestra imágenes desde Unsplash con paginación.</p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+          <!-- Card -->
+          <div class="challenge-card" data-challenge-id="galeria">
+            <div class="challenge-header">
+              <h3>Galería de imágenes</h3>
+              <span class="challenge-source">(Intermedio)</span>
+            </div>
+            <p>
+              Abre imágenes en un lightbox con datos dinámicos y transiciones.
+            </p>
+            <div class="challenge-actions">
+              <button class="statement-btn">Información</button>
+              <div class="status-icons">
+                <span class="incomplete-icon" title="Completed">○</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card[final] -->
+        </section>
+      </main>
+
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+          <button class="modal-close">&times;</button>
+          <h2 class="modal-title" id="modal-title">Challenge Title</h2>
+          <div class="modal-content">
+            <h3>Requisitos clave para este proyecto:</h3>
+            <ul class="requirements-list" id="requirements-list">
+              <!-- Se llenará dinámicamente -->
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="footer-left">
+              <button class="btn-demo" id="demo-btn">Demo</button>
+              <button class="btn-github" id="github-btn">GitHub</button>
+            </div>
+            <a class="btn-start" href="./challenges/download/reto.zip"
+              >Empezar reto</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <a class="github" href="https://github.com/unainavarro" target="_blank">
+          @unainavarro
+          <span class="icon" title="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></span>
+        </a>
+      </footer>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

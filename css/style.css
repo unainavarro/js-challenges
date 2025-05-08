@@ -1,0 +1,9 @@
+@import url(./main/variables.css);
+@import url(./main/global.css);
+
+/* Components */
+@import url(./components/header.css);
+@import url(./components/progress.css);
+@import url(./components/challenges.css);
+@import url(./components/modal.css);
+@import url(./components/footer.css);
